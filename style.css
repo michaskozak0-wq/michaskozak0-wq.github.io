@@ -1,0 +1,349 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: #f5f7fb;
+    color: #1e2a3a;
+}
+
+.screen {
+    display: none;
+    min-height: 100vh;
+    background: #f5f7fb;
+    padding-bottom: 70px;
+}
+
+.screen.active {
+    display: block;
+}
+
+/* LOGOWANIE */
+.login-card {
+    background: white;
+    min-height: 100vh;
+    padding: 40px 24px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 40px;
+}
+
+.flag-icon {
+    font-size: 32px;
+}
+
+.logo h1 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.logo .highlight {
+    font-weight: 800;
+    color: #d42e2e;
+}
+
+.greeting {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.input-group {
+    margin: 24px 0;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+.btn-primary {
+    background: #1a5f7a;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid #1a5f7a;
+    color: #1a5f7a;
+    padding: 12px;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.forgot-link {
+    display: block;
+    margin: 16px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.footer-logo {
+    margin-top: 40px;
+    font-size: 10px;
+    color: #999;
+    line-height: 1.5;
+}
+
+.version {
+    display: block;
+    margin-top: 8px;
+}
+
+/* KARTY I DOKUMENTY */
+.document-card {
+    background: white;
+    margin: 16px;
+    padding: 20px;
+    border-radius: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.card-header h2 {
+    font-size: 20px;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.doc-details {
+    display: grid;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.detail-label {
+    font-weight: 500;
+    color: #666;
+}
+
+.detail-value {
+    font-weight: 600;
+    font-family: monospace;
+}
+
+.btn-small {
+    background: #eef2f5;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.btn-small.outline {
+    background: transparent;
+    border: 1px solid #ccc;
+}
+
+/* DOLNA NAWIGACJA */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0 20px;
+    border-top: 1px solid #eee;
+    z-index: 100;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    font-size: 14px;
+    padding: 8px 12px;
+    color: #888;
+    cursor: pointer;
+}
+
+.nav-btn.active {
+    color: #1a5f7a;
+    font-weight: 600;
+}
+
+/* KARTY TREŚCI */
+.tab-content {
+    padding: 16px;
+}
+
+.tab-content.hidden {
+    display: none;
+}
+
+.services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.service-btn {
+    background: white;
+    border: none;
+    padding: 16px;
+    border-radius: 16px;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.qr-container {
+    text-align: center;
+    background: white;
+    padding: 32px;
+    border-radius: 24px;
+    margin-top: 20px;
+}
+
+.more-menu {
+    background: white;
+    border-radius: 24px;
+    padding: 20px;
+}
+
+.more-menu h3 {
+    margin: 20px 0 12px;
+}
+
+.more-btn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 14px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+/* ADMIN PANEL */
+.admin-panel {
+    background: #fff3e0;
+    margin: 20px 16px;
+    padding: 16px;
+    border-radius: 20px;
+    border: 1px solid #ffd966;
+}
+
+.code-gen {
+    display: flex;
+    gap: 8px;
+    margin: 12px 0;
+}
+
+.code-gen input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: monospace;
+}
+
+.btn-danger {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 12px;
+}
+
+#activeCodesList {
+    list-style: none;
+    margin-top: 8px;
+}
+
+#activeCodesList li {
+    background: white;
+    padding: 6px 10px;
+    margin: 4px 0;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+/* EKRAN EDYCJI */
+.edit-container {
+    background: white;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.form-group button {
+    margin-top: 8px;
+    width: auto;
+    padding: 8px 16px;
+}
+
+.status-bar {
+    background: #1a5f7a;
+    color: white;
+    padding: 12px 16px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
